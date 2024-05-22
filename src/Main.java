@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Random random = new Random();
-
+        //Switch Normal
         int dia = 5;
         String nombreDia = null;
 
