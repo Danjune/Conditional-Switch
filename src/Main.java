@@ -6,41 +6,17 @@ public class Main {
         //Random random = new Random();
         //Switch Normal
         int dia = 5;
-        String nombreDia = null;
+        String nombreDia = switch (dia) {
+            case 1 -> "Lunes";
+            case 2 -> "Martes";
+            case 3 -> "Miercoles";
+            case 4 -> "Jueves";
+            case 5 -> "Viernes";
+            case 6 -> "Sabado";
+            case 7 -> "Domingo";
+            default -> "No existe ese dia";
+        };
 
-        switch (dia){
-            case 1:
-                nombreDia = "Lunes";
-            break;
-
-            case 2:
-                nombreDia = "Martes";
-            break;
-
-            case 3:
-                nombreDia = "Miercoles";
-            break;
-
-            case 4:
-                nombreDia = "Jueves";
-            break;
-
-            case 5:
-                nombreDia = "Viernes";
-            break;
-
-            case 6:
-                nombreDia = "Sabado";
-            break;
-
-            case 7:
-                nombreDia = "Domingo";
-            break;
-
-            default:
-                nombreDia = "No existe ese dia";
-            break;
-        }
         System.out.println("El dia es: " + nombreDia);
 
     }
